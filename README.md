@@ -59,3 +59,47 @@ I used a within-subject design and counterbalanced the order of the two conditio
 ## Pilot Evaluation
 
 Before conducting the main study, I performed a pilot evaluation with two participants, P011 and P012, to identify potential issues with the questions and visualization design. Both participants completed four questions, using both static and interactive visualizations. P011 began with the static version, while P012 began with the interactive version. The pilot results showed that the static visualization had an accuracy of 100%, compared to 75% for the interactive version. The average completion time was 9.5 seconds for the static visualization and 24.5 seconds for the interactive visualization. However, I noticed that both participants initially experienced confusion when interpreting the numbers and layout. Their completion times generally decreased after becoming familiar with the visualization, suggesting a possible learning effect. Based on these observations, I decided to provide standardized instructions explaining the percentages, sample sizes, and interaction controls before participants begin the main evaluation. This should reduce confusion caused by unfamiliarity with the visualization. The pilot participants will not be included in the main evaluation dataset or quantitative analysis.
+
+
+
+## Task 4
+
+For this task, I analyzed the results collected from the 10 participants in the main study, excluding the two pilot participants. Each participant answered four questions, two using the static heatmap and two using the interactive heatmap, giving a total of 40 observations. I used Python and Pandas to calculate descriptive statistics, including average accuracy, mean completion time, median completion time, and standard deviation. I also created graphs to compare the performance of the two visualizations.
+
+### Overall Accuracy and Completion Time
+
+| Condition | Correct Answers | Accuracy | Average Time (s) | Median Time (s) | Standard Deviation (s) |
+|---|---|---|---|---|---|
+| Static | 17/20 | 85% | 18.55 | 17.0 | 9.22 |
+| Interactive | 18/20 | 90% | 22.00 | 17.5 | 17.31 |
+
+<img width="1260" height="827" alt="task4_completion_time" src="https://github.com/user-attachments/assets/80f61d07-a853-4ab4-9b48-f860af3c1f92" />
+
+<img width="1260" height="827" alt="task4_accuracy" src="https://github.com/user-attachments/assets/3a5d48ca-a4d4-49f0-b06d-8936a4861a72" />
+
+
+From the results, the interactive visualization had a slightly higher accuracy of 90% compared to 85% for the static visualization. However, the static version had a faster average completion time of 18.55 seconds, compared to 22 seconds for the interactive version. One important observation was that the interactive version had a higher standard deviation, meaning participants' completion times varied more. This was partly due to participant P06 reaching the 90-second time limit on one question. The median completion times were almost identical, with 17 seconds for static and 17.5 seconds for interactive. This suggests that the difference between the averages was influenced by unusually long completion times rather than a consistent difference between the visualizations.
+
+### Comparing Different Analytical Tasks
+
+I also compared the results based on the two types of analytical questions: identifying changes in oat milk preferences across time periods and comparing hourly percentages with grouped percentages.
+
+| Task Type | Static Accuracy | Interactive Accuracy | Static Avg. Time | Interactive Avg. Time |
+|---|---|---|---|---|
+| Comparing changes | 90% | 100% | 21.9 s | 19.3 s |
+| Comparing aggregation | 80% | 80% | 15.2 s | 24.7 s |
+
+
+<img width="1800" height="810" alt="task4_by_task" src="https://github.com/user-attachments/assets/05583ea7-3920-4346-98e0-99dfa7fe93d0" />
+
+For questions involving changes across time periods, participants performed slightly better with the interactive visualization. They achieved 100% accuracy and completed the questions faster on average. However, for questions involving hourly and grouped percentages, both visualizations had the same accuracy of 80%. Participants took longer using the interactive version, although this result was influenced by the 90-second timeout. This suggests that interaction may be more beneficial for certain analytical tasks than others.
+
+### Differences Between Participants
+
+<img width="1620" height="882" alt="task4_participants" src="https://github.com/user-attachments/assets/4c51c32c-44ec-41bd-952a-ee3569948a2d" />
+
+Looking at individual participants, I noticed that the interactive visualization did not affect everyone in the same way. For example, P04 completed interactive questions in an average of 14.5 seconds compared to 25.5 seconds for static questions. Similarly, P08 completed interactive questions faster, averaging 18 seconds compared to 34.5 seconds for static questions. However, P06 took an average of 60.5 seconds with the interactive visualization compared to 15.5 seconds with the static visualization. This difference was largely caused by the participant reaching the 90-second time limit. I also considered whether the order of the visualizations affected performance. Participants who started with the static visualization had an average interactive completion time of 15.1 seconds, while participants who started with the interactive visualization averaged 28.9 seconds. This may indicate a learning effect, although the small sample size and the timeout make it difficult to draw a definite conclusion.
+
+### Interpretation of Results
+
+My original hypothesis was that the interactive visualization would help participants complete the analytical tasks faster while maintaining similar or better accuracy. The results partially supported this hypothesis. The interactive visualization had slightly better overall accuracy, but its average completion time was longer than the static version. One possible explanation is that the interactive controls introduced additional steps or unfamiliarity for some participants. However, for tasks involving changes between time periods, the interactive version appeared to be useful. Overall, the results suggest that interaction does not automatically improve visualization performance. Its effectiveness depends on the type of analytical task and how comfortable participants are with the interface. There were also limitations to this evaluation. The study only included 10 participants, some participants may have benefited from learning effects, and unusual completion times affected the overall averages. Because of these limitations, I cannot conclude that either visualization is universally better. Instead, the experiment demonstrates that both static and interactive visualizations have different strengths depending on the analytical task.
