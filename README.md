@@ -42,3 +42,20 @@ The results will be stored in a CSV file using anonymous participant identifiers
 
 The main purpose of this interaction is to allow users to see how oat milk preferences changes depending on the time of day. Switching between hourly and grouped views allows users to identify more detailed patterns or observe broader trends. My hypothesis is that that the interactive version makes it easier for users to compare patterns at different levels of time aggregation because they can switch between views without examining two separate charts. 
 
+## Task 3: Conducting the Evaluation
+
+Before conducting the main evaluation, I performed a pilot study with 2 participants to identify any potential issues with the questions and visualization controls. For the main evaluation, I recruited 10 participants who were not members of my project group. Each participant completed four analytical questions, two using the static visualization and two using the interactive visualization. The questions were:
+
+Which drink has the largest increase in oat milk percentage from 9–10 AM to 11 AM–12 PM?
+
+For Latte, how many percentage points do the 9 AM oat milk percentage differ from the 9–10 AM grouped percentage?
+
+Which drink has the largest increase in oat milk percentage from 11 AM–12 PM to 1–3 PM?
+
+For Matcha Latte, how many percentage points does the 10 AM oat milk percentage differ from the 9–10 AM grouped percentage?
+
+I used a within-subject design and counterbalanced the order of the two conditions to reduce learning effects. The participants were asked to answer each question as quickly and accurately as possible. For each question, I recorded the participant's response, whether the answer was correct, and the time required to complete the task in seconds. The results were organized in a CSV file using anonymous participant identifiers.
+
+## Pilot Evaluation
+
+Before conducting the main study, I performed a pilot evaluation with two participants, P011 and P012, to identify potential issues with the questions and visualization design. Both participants completed four questions, using both static and interactive visualizations. P011 began with the static version, while P012 began with the interactive version. The pilot results showed that the static visualization had an accuracy of 100%, compared to 75% for the interactive version. The average completion time was 9.5 seconds for the static visualization and 24.5 seconds for the interactive visualization. However, I noticed that both participants initially experienced confusion when interpreting the numbers and layout. Their completion times generally decreased after becoming familiar with the visualization, suggesting a possible learning effect. Based on these observations, I decided to provide standardized instructions explaining the percentages, sample sizes, and interaction controls before participants begin the main evaluation. This should reduce confusion caused by unfamiliarity with the visualization. The pilot participants will not be included in the main evaluation dataset or quantitative analysis.
