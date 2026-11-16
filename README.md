@@ -21,26 +21,38 @@ The heatmap can be seen in the html file uploaded.
 
 ## Task 2
 
-For this evaluation, I wanted to investigate whether adding interaction to the oat milk preference heatmap improves users' ability to compare purchasing patterns across different times of the day. My hypothesis is that participants using the interactive visualization will complete analytical tasks more quickly than those using the static visualization, while maintaining similar accuracy.
+For this evaluation, I wanted to investigate whether adding interaction to the oat milk preference heatmap improves users' ability to compare purchasing patterns across different times of the day. My hypothesis was that participants using the interactive visualization would complete analytical tasks more quickly than those using the static visualization while maintaining similar or better accuracy.
 
-I designed a within-subject experiment in which every participant evaluates both versions of the heatmap. Each participant answers four questions, two using the static version and two using the interactive version.
+I designed a within-subject experiment where each participant evaluated both versions of the heatmap. Each participant answered four questions, two using the static version and two using the interactive version. The experiment included two analytical task types: comparing changes in oat milk percentages across time periods and comparing individual hourly percentages with grouped-time percentages. Each task had two comparable variants to reduce memorization effects.
 
-The evaluation includes two analytical task types. The first involves comparing changes in oat milk percentages across different time periods. The second involves comparing individual hourly percentages with their corresponding grouped-time percentages. Each task has two comparable question variants to reduce the possibility of participants remembering answers. To reduce ordering effects, five participants will begin with the static visualization and five with the interactive visualization. The question variants will also be distributed across both conditions.
+### Analytical Questions and Expected Answers
 
-I will collect two quantitative measurements for each question:
+| Task | Variant | Question | Correct Answer |
+|---|---|---|---|
+| Change | A | Which drink has the largest increase in oat milk percentage from 9–10 AM to 11 AM–12 PM? | Latte |
+| Change | B | Which drink has the largest increase in oat milk percentage from 11 AM–12 PM to 1–3 PM? | Matcha Latte |
+| Aggregation | A | For Latte, how many percentage points does the 9 AM oat milk percentage differ from the 9–10 AM grouped percentage? | 5 |
+| Aggregation | B | For Matcha Latte, how many percentage points does the 10 AM oat milk percentage differ from the 9–10 AM grouped percentage? | 3 |
 
-- **Accuracy:** Whether the participant provides the correct answer, recorded as 1 for correct and 0 for incorrect.
-- **Completion time:** The number of seconds required to answer the question.
+### Counterbalancing
 
-Before conducting the main study, I will test the procedure with one or two pilot participants to identify unclear instructions, unavailable data values, or questions that are too easy or difficult.
+To reduce potential learning effects, I divided the 10 participants into four groups. Five participants started with the static visualization, while the other five started with the interactive visualization. I also distributed the question variants across both conditions so that the same questions were not always assigned to the same visualization.
 
-All participants will receive the same instructions and use the same testing procedure. They will be asked to answer each question as accurately and quickly as possible, with a maximum of 90 seconds per question. Unanswered or timed-out questions will be counted as incorrect, and their completion time will be recorded as 90 seconds.
+| Participants | First Condition | Second Condition |
+|---|---|---|
+| P001–P003 | Static (A) | Interactive (B) |
+| P004–P005 | Static (B) | Interactive (A) |
+| P006–P008 | Interactive (A) | Static (B) |
+| P009–P010 | Interactive (B) | Static (A) |
 
-The results will be stored in a CSV file using anonymous participant identifiers, along with the visualization condition, question variant, participant response, accuracy, and completion time.
+Each participant completed one change question and one aggregation question under each condition.
 
-**Purpose of the Interaction**
+### Evaluation Procedure
 
-The main purpose of this interaction is to allow users to see how oat milk preferences changes depending on the time of day. Switching between hourly and grouped views allows users to identify more detailed patterns or observe broader trends. My hypothesis is that that the interactive version makes it easier for users to compare patterns at different levels of time aggregation because they can switch between views without examining two separate charts. 
+Before beginning the experiment, I explained that the heatmaps displayed the percentage of customers selecting oat milk for different drinks across different times of the day. I also explained what the percentages and sample sizes represented and demonstrated how to switch between the hourly and grouped-time views in the interactive visualization. Participants were instructed to answer each question as quickly and accurately as possible. I measured completion time in seconds, starting when the participant was presented with the question and stopping when they provided their final answer. Each question had a maximum time limit of 90 seconds.
+
+I recorded two quantitative measurements which were Accuracy and Completion time. A value of 1 meant a correct response, while 0 meant an incorrect response. Questions that were unanswered after 90 seconds were recorded as incorrect, with a completion time of 90 seconds. I also recorded whether a participant timed out and documented any difficulties they experienced while interpreting the visualization. Before the main study, I conducted a pilot evaluation with two participants to check whether the questions and instructions were understandable. Based on their feedback, I provided more standardized instructions explaining the visualization before the main experiment. All measurements were recorded in a CSV file using anonymous participant identifiers. The pilot participants were excluded from the main analysis.
+
 
 ## Task 3: Conducting the Evaluation
 
