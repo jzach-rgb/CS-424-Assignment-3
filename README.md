@@ -14,8 +14,12 @@ For the interactive version, I implemented a dropdown menu that allows users to 
 
 The interactive visualization also allows users to hover over cells to inspect the corresponding values and sample sizes. Both versions display sample sizes and flag groups containing fewer than eight observations to avoid presenting potentially misleading percentages.
 
-The heatmap can be seen in the html file uploaded.
 
+The interactive heatmap can be accessed using the link below:
+
+[View Interactive Heatmap](assignment3_outputs/interactive_heatmap.html)
+
+To interact with the visualization, open the HTML file from the repository and download it using GitHub's "Download raw file option". Then open the downloaded file in a web browser such as Chrome or Edge. The dropdown allows users to switch between hourly and grouped-time views.
 
 
 
