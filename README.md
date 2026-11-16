@@ -1,3 +1,22 @@
+## Instructions for Running the Project
+
+### 1. Install Required Libraries
+
+Make sure Python is installed, then install the required libraries using the terminal: pip install pandas numpy matplotlib plotly
+
+
+### 2. Generate the Visualizations
+
+Download or clone the repository and run: python assignment3_task1.py This generates the static and interactive heatmaps inside the assignment3_outputs folder. To view the interactive heatmap, open interactive_heatmap.html in Chrome or Edge. Use the dropdown menu to switch between hourly and grouped-time views.
+
+
+
+### 3. Run the Evaluation Analysis
+
+The participant measurements are stored in results_answers.csv. To reproduce the statistical analysis and graphs, run: python task4_analysis.py The script calculates accuracy and completion-time statistics for both conditions and generates comparison graphs. Pilot participants are excluded from the main analysis.
+
+
+
 ## Task 1
 
 For this assignment, I decided to continue using the oat milk preference heatmap from Assignment 2. The visualization compares the percentage of customers who selected oat milk for three drinks: Latte, Matcha Latte, and Chai Latte, across different times of the day. I created two versions of the visualization. A static version using Matplotlib and an interactive version using Plotly. Both versions use the same cleaned Cor Coffee dataset and calculate oat milk percentages in the same way.
